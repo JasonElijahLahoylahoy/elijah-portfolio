@@ -17,16 +17,23 @@ export default function Portfolio() {
   },
 ];
 
-  const skills = [
-    'React Native',
-    'PHP',
-    'Bootstrap',
-    'Firebase',
-    'JavaScript',
-    'Cybersecurity',
-    'Computer Networking',
-    'UI/UX Design',
-  ];
+const skills = [
+  'React Native',
+  'Next.js',
+  'JavaScript',
+  'PHP',
+  'Python',
+  'Firebase',
+  'Bootstrap',
+  'Tailwind CSS',
+  'Cybersecurity',
+  'Computer Networking',
+  'Technical Support',
+  'UI/UX Design',
+  'Packet Tracer',
+  'Figma',
+  'Database Management',
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-950 to-black text-white">
@@ -83,15 +90,15 @@ export default function Portfolio() {
 
           <div className="bg-white/5 backdrop-blur-md border border-gray-800 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300">
             <p className="text-lg leading-relaxed text-gray-300">
-              I am an Information Technology student passionate about software
-              engineering, cybersecurity, networking, and UI/UX design. I enjoy
-              developing modern applications, solving technical problems, and
-              building digital solutions that improve user productivity and
-              experience.
+              I am a Bachelor of Science in Information Technology student passionate about
+              software development, cybersecurity, networking, and UI/UX design. I enjoy
+              building modern digital solutions that solve real-world problems and improve
+              user experiences. My interests include mobile development, IoT systems,
+              technical support, and interactive web applications.
             </p>
           </div>
         </section>
-
+      
         {/* SKILLS */}
         <section>
           <h2 className="text-4xl font-bold mb-10 border-l-4 border-white pl-4">
@@ -153,15 +160,39 @@ export default function Portfolio() {
               IT Support Intern — Concentrix
             </h3>
 
-            <p className="text-gray-400 leading-relaxed">
-              Assisted with troubleshooting hardware and software concerns,
-              technical support operations, and user assistance in a professional
-              workplace environment. Strengthened communication, analytical, and
-              IT operational skills through hands-on experience.
+              <p className="text-gray-400 leading-relaxed">
+              Assisted in IT operations and technical support services by troubleshooting
+              hardware, software, and networking concerns. Collaborated with senior
+              technicians on complex technical issues while improving communication,
+              ticketing, and problem-solving skills in a professional environment.
             </p>
           </div>
         </section>
+            <section>
+            <h2 className="text-4xl font-bold mb-10 border-l-4 border-white pl-4">
+              Certifications
+            </h2>
 
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                'Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate',
+                'Oracle Cloud Data Management 2023 Certified Foundations Associate',
+                'Oracle Cloud Infrastructure 2023 Certified Foundations Associate',
+                'SQL and Relational Databases 101 (IBM)',
+                'NoSQL and DBaaS 101 (IBM)',
+                'Developing Designs for Print Media (TESDA)',
+                'Developing Designs for a Logo (TESDA)',
+                'Introduction to Visual Graphic Design (TESDA)',
+              ].map((cert) => (
+                <div
+                  key={cert}
+                  className="bg-white/5 border border-gray-800 rounded-2xl p-5 hover:bg-white hover:text-black transition duration-300"
+                >
+                  {cert}
+                </div>
+              ))}
+            </div>
+          </section>
         {/* CONTACT */}
         <section>
           <h2 className="text-4xl font-bold mb-10 border-l-4 border-white pl-4">
